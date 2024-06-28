@@ -1,0 +1,146 @@
+.ancestorContainer {
+    display: flex;
+    background-color: whitesmoke;
+    padding: 8px;
+    border-radius: 8px;
+    height: 80vh;
+    margin: 6px;
+    flex-direction: column;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 4px;
+}
+
+.addButton {
+    height: fit-content;
+    width: fit-content;
+    padding: 12px 8px;
+    background-color: floralwhite;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: large;
+    font-weight: 700;
+    transition: all 0.3s linear;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.addButton:hover {
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.todoContainer {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    background-color: rgb(0, 0, 0);
+    margin: 4px;
+    border-radius: 8px;
+    padding: 8px;
+    gap: 12px;
+    overflow-y: auto;
+}
+
+.todo {
+    background-color: white;
+    padding: 16px; 
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.todo input[type="checkbox"] {
+    margin-right: 12px;
+    height: 24px; 
+    width: 24px;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.todoContent {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.todoTitle {
+    font-weight: bold;
+    font-size: 1.2em; 
+}
+
+.todoDescription {
+    font-size: 0.9em; 
+    color: #777;
+}
+
+.actionButton {
+    cursor: pointer;
+    margin-left: 12px; 
+}
+
+.todoInput {
+    width: 240px;
+    margin-right: 8px;
+    height: 45px;
+    font-size: large;
+}
+
+.noTodoMessage {
+    color: white;
+    align-self: center;
+    justify-self: center;
+    font-size: large;
+}
+
+
+.todo.editing {
+    padding: 24px; 
+}
+
+.todo.editing .editField {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.todo.editing .editField label {
+    font-weight: bold;
+    font-size: 1.2em; 
+}
+
+.todo.editing .editInput {
+    width: calc(100% - 24px); 
+    padding: 12px;
+    font-size: large; 
+}
+.todo.editing button {
+    padding: 12px 24px; 
+    font-size: large; 
+    border-radius: 8px;
+    background-color: floralwhite;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.todo.editing button:hover {
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.4);
+}
